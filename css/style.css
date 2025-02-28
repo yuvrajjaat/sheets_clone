@@ -1,0 +1,181 @@
+/* Use a Google Font (Montserrat) for a more modern look */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Reset basic defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f7fa; /* Light background */
+  color: #333;
+}
+
+/* Container to hold everything */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header (with a vibrant gradient) */
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0f1f3;
+  padding: 10px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input[type="color"] {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-size: 0.9rem;
+}
+
+.toolbar button:hover,
+.toolbar select:hover,
+.toolbar input[type="color"]:hover {
+  background: #e9ecf1;
+  transform: scale(1.02);
+}
+
+/* Formula bar */
+.formula-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #fdfdff;
+  border-bottom: 1px solid #dadce0;
+}
+
+.formula-bar span {
+  margin-right: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.formula-bar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.formula-bar button {
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  font-size: 0.9rem;
+}
+
+.formula-bar button:hover {
+  background: #e9ecf1;
+  transform: scale(1.02);
+}
+
+/* Spreadsheet container */
+.spreadsheet-container {
+  overflow: auto;
+  max-height: 70vh; /* Adjust as desired */
+  border-top: 1px solid #dadce0;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: left;
+  min-width: 80px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header cells */
+th {
+  background: #f8f9fc;
+  color: #555;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Regular cells */
+td {
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+/* Selected cell highlight */
+td.selected {
+  background: #cce8ff;
+}
+
+/* Editable input inside the cells */
+td input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 4px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+td input:focus {
+  outline: none;
+  background: #fafcfd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 12px;
+  background: #f0f1f3;
+  border-top: 1px solid #dadce0;
+  font-size: 0.85rem;
+  color: #666;
+}
