@@ -3,6 +3,9 @@
 ## Overview
 This project is a web application that mimics the core functionalities and user interface of Google Sheets. It allows users to enter data, apply basic formatting, and compute formulas such as **SUM()** and **AVERAGE()**. The project is built using plain HTML, CSS, and JavaScript.
 
+## 📸 Screenshots
+![Screenshot 2025-02-28 153840](https://github.com/user-attachments/assets/57d8550e-73c1-4db0-948e-a72870f33ba9)
+
 ## Directory Structure
 ```sh
 GoogleSheetsClone/ 
